@@ -1,0 +1,13 @@
+.theme-T {
+    background-image: url('/public/themeThree.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%
+}
+
+.bannerQ {
+    background-image: url('../assets/bannerQuiz.png');
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size: 100% 100%;
+}

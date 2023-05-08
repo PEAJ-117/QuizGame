@@ -1,34 +1,41 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import buttonCapture from "./components/buttons/buttonCapture";
+import buttonGame from "./components/buttons/buttonGame";
+import './css/buttons.css'
+import './css/background.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="container">
+      {/* fila 1 */}
+      <div className="row container">
+        <div className="col-4 text-start">
+          <h1><i>The Quiz Game!</i></h1>
+          <p><b>¡Contesta, crea, y diviertete desafiando a tus amigos!</b></p>
+        </div>
+        <hr style={{ border: "5px solid black" }} /><br />
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+      {/* Fila 2 */}
+      <div className="row">
+        <div className="col-1">
+          {/* Botones */}
+          <button type="button"
+            className="btn btn-outline-primary buttonC"
+            onClick={buttonCapture}>
+            <h4>CREAR</h4>
+          </button>
+          <br /><br />
+          <button type="button"
+            className="btn btn-outline-success buttonC"
+            onClick={buttonGame}>
+            <h4>JUGAR</h4>
+          </button>
+        </div>
+        <div className="col text-center">
+          {/* Contenedor de preguntas */}
+          <h4>Cuestionarios</h4>
+        </div>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    </div>
   )
 }
 

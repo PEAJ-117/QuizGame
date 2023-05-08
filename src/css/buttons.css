@@ -1,0 +1,5 @@
+/* Formas y tamanos de los botones */
+.buttonC {
+    border-radius: 50px;
+    border: 3px solid black;
+}
