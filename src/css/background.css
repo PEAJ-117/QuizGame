@@ -1,13 +1,12 @@
 .theme-T {
-    background-image: url('/public/themeThree.jpeg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100% 100%
+    background-image: url('/src/assets/acertijo.jpg');
+    background-attachment:fixed;
+    background-size: 100px 100px;
 }
 
 .bannerQ {
     background-image: url('../assets/bannerQuiz.png');
     background-repeat: no-repeat;
-    background-attachment:fixed;
-    background-size: 100% 100%;
+    background-position: center;
+    background-size: 100px 100px;
 }

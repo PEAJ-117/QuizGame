@@ -5,34 +5,49 @@ import './css/background.css'
 
 function App() {
   return (
-    <div className="container">
-      {/* fila 1 */}
-      <div className="row container">
-        <div className="col-4 text-start">
+    <div className="container" style={{ border: " 1px solid black" }}>
+
+      {/* Fila 1 */}
+      <div className="row" style={{ backgroundColor: " white " }}>
+        <div className="col-6 text-center">
           <h1><i>The Quiz Game!</i></h1>
           <p><b>¡Contesta, crea, y diviertete desafiando a tus amigos!</b></p>
         </div>
-        <hr style={{ border: "5px solid black" }} /><br />
+        <div className="col-6 text-center bannerQ">
+        </div>
       </div>
+
       {/* Fila 2 */}
-      <div className="row">
-        <div className="col-1">
+      <div className="row" style={{ backgroundColor: " orange " }}>
+
+        <div className="col-2 text-center" style={{ border: " 1px solid black" }}>
           {/* Botones */}
           <button type="button"
-            className="btn btn-outline-primary buttonC"
+            className="btn btnC"
             onClick={buttonCapture}>
-            <h4>CREAR</h4>
           </button>
-          <br /><br />
+          <b>CREAR</b>
+
           <button type="button"
-            className="btn btn-outline-success buttonC"
+            className="btn btnP"
             onClick={buttonGame}>
-            <h4>JUGAR</h4>
           </button>
+          <b>JUGAR</b>
         </div>
-        <div className="col text-center">
+
+        <div className="col-10 text-center" style={{ border: " 1px solid black" }}>
           {/* Contenedor de preguntas */}
           <h4>Cuestionarios</h4>
+          <div className="row" style={{ border: "1px solid black" }}>
+            <div className="col-2">
+              <button className=" btn btnBgImg"></button>
+              <p>Titulo</p>
+            </div>
+            <div className="col-2">
+              <button className=" btn btnBgImg"></button>
+              <p>Titulo</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
